@@ -12,7 +12,8 @@
         <form action="{% url 'restaurant-update' restaurant_obj.id %}" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             {{form|crispy}}
-            <input type="submit" value="Update" class="btn btn-outline-primary">
+            <input type="submit" value="Create" class="btn btn-outline-primary">
+            
         </form>
     </p>
   </div>
